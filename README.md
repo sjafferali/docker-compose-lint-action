@@ -11,7 +11,7 @@ A github action that checks the syntax if your docker compose files.
 ## Example usage
 
 ```yaml
-uses: sjafferali/docker-compose-lint-action@v0.1.0
+uses: sjafferali/docker-compose-lint-action@v0.1.1
 with:
   compose-file: './docker-compose.yml'
 ```
