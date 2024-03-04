@@ -1,2 +1,17 @@
-# docker-compose-lint-action
+# Docker Compose Lint Action
 A github action that checks the syntax if your docker compose files.
+
+## Inputs
+
+### compose-file
+
+**Optional** The path to your docker-compose.yml file. Default `"./docker-compose.yml".
+
+
+## Example usage
+
+```yaml
+uses: sjafferali/docker-compose-lint-action@main
+with:
+  compose-file: './docker-compose.yml'
+```

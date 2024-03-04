@@ -1,0 +1,16 @@
+# action.yml
+name: 'Docker Compose Linter'
+description: 'Docker Compose Files'
+branding:
+  icon: 'check'
+  color: 'green'
+inputs:
+  compose-file:  # id of input
+    description: 'path to docker-compose.yml file'
+    required: false
+    default: './docker-compose.yml'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.compose-file }}
